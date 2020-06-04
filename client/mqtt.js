@@ -13,9 +13,4 @@ client.on("connect", () => {
     client.on('message', (topic, message) => {
         console.log(topic, message.toString())
     })
-
-    setInterval(() => {
-        client.publish('presence', new Date().toString());
-        console.log("publish");
-    }, 5000);
 });
