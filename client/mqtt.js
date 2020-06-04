@@ -16,6 +16,6 @@ client.on("connect", () => {
 
     setInterval(() => {
         client.publish('presence', new Date().toString());
+        console.log("publish");
     }, 5000);
-
 });
